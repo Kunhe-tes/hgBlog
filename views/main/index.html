@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/index.js"></script>
+</head>
+<body>
+    {% if userInfo._id %}
+    <div id="main">欢迎你，{{userInfo.username}}</div>
+    <a class="log-out">点击退出</a>
+    {% else %}
+    <div class="main">未登录</div>
+</body>
+</html>
