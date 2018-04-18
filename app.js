@@ -64,7 +64,7 @@ app.use('/',require('./routers/main'));
 
 mongoose.Promise = global.Promise;  //解决mongoose 已经不在内置实现promise，需要添加第三方promise插件的问题（主要针对的是mongoose4.4版本以上）
 //连接数据库
-mongoose.connect('mongodb://hg:123456@39.106.38.209:27017/testNode',{useMongoClient: true},function(err){
+mongoose.connect('mongodb://username:password@host:port/database?options...',{useMongoClient: true},function(err){
     if(err){
         console.log(err);
     }else{
