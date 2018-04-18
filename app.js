@@ -13,7 +13,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 // 加载cookies模块
 var Cookies = require('cookies');
-
+var User = require('./models/User');
 // 创建app应用 => NodeJS Http.createServer();
 var app = express();
 //设置静态文件托管
@@ -30,9 +30,17 @@ app.use( function(req, res, next){
     if(req.cookies.get('userInfo')){
         try{
             req.userInfo = JSON.parse(req.cookies.get('userInfo'));
-        }catch (e){}
+            //获取当前登录用户角色信息
+            User.findById(req.userInfo._id).then(function(userInfo){
+                req.userInfo.isAdmin = Boolean(userInfo.isAdmin);
+                next();
+            });
+        }catch (e){
+            next();
+        }
+    }else{
+        next();
     }
-    next();
 });
 
 // 配置应用模板
