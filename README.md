@@ -25,7 +25,8 @@ The directory structure, as follows.
 
     npm i
 3. 修改app.js文件，使用个人的服务器地址、用户名和密码，格式如下（端口等均可自由配置）
-mongoose.connect('mongodb://username:password@host:port/database?options...',{useMongoClient: true},function(err){
+``` node
+mongoose.connect('mongodb://username:password@host:port/database',{useMongoClient: true},function(err){
     if(err){
         console.log(err);
     }else{
@@ -34,7 +35,7 @@ mongoose.connect('mongodb://username:password@host:port/database?options...',{us
         app.listen(8081);
     }
 });
-
+```
 
 4. 运行app.js文件
 
