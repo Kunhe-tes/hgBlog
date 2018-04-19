@@ -40,4 +40,7 @@ mongoose.connect('mongodb://username:password@host:port/database',{useMongoClien
 4. 运行app.js文件
 
     若编辑器为webstorm，打开app.js文件，点击右键选择"Run app.js"即可
+5. 打开项目
+
+    运行成功后，根据所配置的端口（示例为8080），在浏览器输入localhost:8080，即可打开
 
