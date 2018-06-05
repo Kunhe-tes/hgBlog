@@ -1,6 +1,6 @@
 
 # hgBlog
-### a blog system based on Node.js
+### a simple blog system based on Node.js
 
 The directory structure, as follows.
 
@@ -19,30 +19,32 @@ The directory structure, as follows.
 
 ###########部署步骤
 
-1. 安装Node并配置运行环境
+- 安装Node并配置运行环境
 
-2. 安装配置文件  
-
+- 安装配置文件  
+```
     npm i
-3. 修改app.js文件，使用个人的服务器地址、用户名和密码，格式如下（端口等均可自由配置）
+``` 
+- 修改app.js文件，使用个人的服务器地址、用户名和密码，格式如下（端口等均可自由配置）
 ``` node
-mongoose.connect('mongodb://username:password@host:port/database',{useMongoClient: true},function(err){
-    if(err){
-        console.log(err);
-    }else{
-        console.log('数据库连接成功');
-        //监听http请求
-        app.listen(8081);
-    }
-});
+    mongoose.connect('mongodb://username:password@host:port/database',{useMongoClient: true},function(err){
+        if(err){
+            console.log(err);
+        }else{
+            console.log('数据库连接成功');
+            //监听http请求
+            app.listen(8081);
+        }
+    });
 ```
 
-4. 运行app.js文件
+- 运行app.js文件
 
-    打开命令行，运行node app（注：若编辑器为webstorm，打开app.js文件，点击右键选择"Run app.js"即可）
+```
+    node app
+```
     
-
-5. 打开项目
+- 打开项目
 
     运行成功后，根据所配置的端口（示例为8080），在浏览器输入localhost:8080，即可打开
 
