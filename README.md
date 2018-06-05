@@ -17,34 +17,34 @@ The directory structure, as follows.
 ```
 
 
-###########部署步骤
+###########Deploy Steps
 
-- 安装Node并配置运行环境
+- install NodeJS and complete environment variables config
 
-- 安装配置文件  
+- install dependent files
 ```
     npm i
 ``` 
-- 修改app.js文件，使用个人的服务器地址、用户名和密码，格式如下（端口等均可自由配置）
+- modify the app.js, which is just for expample.Use personal server,username and password, as follows.
 ``` node
     mongoose.connect('mongodb://username:password@host:port/database',{useMongoClient: true},function(err){
         if(err){
             console.log(err);
         }else{
-            console.log('数据库连接成功');
+            console.log('succeed');
             //监听http请求
             app.listen(8081);
         }
     });
 ```
 
-- 运行app.js文件
-
+- run it
 ```
     node app
 ```
     
-- 打开项目
-
-    运行成功后，根据所配置的端口（示例为8080），在浏览器输入localhost:8080，即可打开
-
+- open this in browser
+```
+    //when it dones, knock as fllows.
+    localhost:8080
+```
