@@ -19,13 +19,13 @@ The directory structure, as follows.
 
 ###########Deploy Steps
 
-- install NodeJS and complete environment variables config
+- install NodeJS and complete the environment variables configs
 
 - install dependent files
 ```
     npm i
 ``` 
-- modify the app.js, which is just for expample.Use personal server,username and password, as follows.
+- modify the app.js, which is just for example.Use your personal server, username and password, as follows.
 ``` node
     mongoose.connect('mongodb://username:password@host:port/database',{useMongoClient: true},function(err){
         if(err){
@@ -43,8 +43,7 @@ The directory structure, as follows.
     node app
 ```
     
-- open this in browser
+- when it dones, knock as follows.
 ```
-    //when it dones, knock as fllows.
     localhost:8080
 ```
