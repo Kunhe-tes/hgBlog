@@ -1,6 +1,6 @@
 
 # hgBlog
-### a simple blog system based on Node.js
+### a simple blog system based on Node.js Express
 
 The directory structure, as follows.
 
@@ -19,13 +19,13 @@ The directory structure, as follows.
 
 ###########Deploy Steps
 
-- install NodeJS and complete the environment variables configs
+- Install the [Node.js](https://nodejs.org/zh-cn) and then complete the environment variables configs.
 
-- install dependent files
+- Install dependent files
 ```
     npm i
 ``` 
-- modify the app.js, which is just for example.Use your personal server, username and password, as follows.
+- To change the app.js so that you can use your own servers, username and password, as follows.
 ``` node
     mongoose.connect('mongodb://username:password@host:port/database',{useMongoClient: true},function(err){
         if(err){
@@ -38,12 +38,12 @@ The directory structure, as follows.
     });
 ```
 
-- run it
+- Run it
 ```
     node app
 ```
     
-- when it dones, knock as follows.
+- When it dones, knock as follows.
 ```
-    localhost:8080
+    localhost:8081
 ```
