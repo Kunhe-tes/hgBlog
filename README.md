@@ -23,16 +23,15 @@ The directory structure, as follows.
 
 - Install dependent files
 ```
-    npm i
+    npm install
 ``` 
-- To change the app.js so that you can use your own servers, username and password, as follows.
+- If you want to use your own database online, change the app.js, as follows.
 ``` node
     mongoose.connect('mongodb://username:password@host:port/database',{useMongoClient: true},function(err){
         if(err){
             console.log(err);
         }else{
             console.log('succeed');
-            //监听http请求
             app.listen(8081);
         }
     });
