@@ -41,8 +41,3 @@ The directory structure, as follows.
 ```
     node app
 ```
-    
-- When it dones, knock as follows.
-```
-    localhost:8081
-```
