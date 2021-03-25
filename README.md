@@ -1,6 +1,6 @@
 
 # hgBlog
-### a simple blog system based on Node.js Express
+### A simple blog system based on Node Express
 
 The directory structure, as follows.
 
