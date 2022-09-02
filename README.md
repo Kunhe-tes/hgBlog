@@ -2,21 +2,6 @@
 # hgBlog
 ### A simple blog system based on Node Express
 
-The directory structure, as follows.
-
-```directory
-
-├── db                      数据库存储目录
-├── models                  数据库模型文件目录
-├── public                  公共文件目录（css、js、image...）
-├── routers                 路由文件目录
-├── schemas                 数据库结构文件目录
-├── views                   模板视图文件目录
-├── app.js                  应用启动入口文件
-
-```
-
-
 ###########Deploy Steps
 
 - Install the [Node.js](https://nodejs.org/zh-cn) and then complete the environment variables configs.
